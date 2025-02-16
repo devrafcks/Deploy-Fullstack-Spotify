@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 2px solid var(--spotify-green);
+}
+
+.footer a {
+    color: var(--spotify-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-function) var(--transition-duration);
+}
+
+.footer a:hover {
+    color: var(--spotify-white);
+}

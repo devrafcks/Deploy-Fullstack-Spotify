@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: .5rem 3rem;
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+}
+
+.header__logo {
+    width: 40px;
+}
+
+.header__title {
+    font-size: 2.3rem;
+}
+
+.header__link {
+    color: var(--spotify-white);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header__link:hover {
+    color: var(--spotify-green);
+}

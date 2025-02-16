@@ -1,0 +1,105 @@
+.single-item {
+  margin-top: -20px;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: var(--border-radius-l);
+  align-items: center;
+  transition: background-color var(--transition-function)
+    var(--transition-duration);
+}
+
+.single-item:hover {
+  background-color: var(--spotify-bg);
+  text-decoration: none;
+}
+
+.single-item:hover .single-item__icon {
+  opacity: 100%;
+  transform: translateY(0);
+}
+
+.single-item:hover .single-item__2lines {
+  -webkit-line-clamp: 10;
+  line-clamp: 10;
+}
+
+.single-item__div-image-button {
+  position: relative;
+}
+
+.single-item__div-image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--spotify-black);
+}
+
+.single-item__icon {
+  position: absolute;
+  font-size: 50px;
+  right: 7.5px;
+  bottom: 7.5px;
+  color: var(--spotify-green);
+  opacity: 0;
+  transform: translateY(100%);
+  transition-timing-function: var(--transition-function);
+  transition-duration: var(--transition-duration);
+  transition-property: opacity, transform;
+}
+
+.single-item__icon--artist {
+  position: fixed;
+  opacity: 1;
+  transform: translateY(0);
+  right: 25px;
+  bottom: 25px;
+}
+
+.single-item__title {
+  font-weight: 700;
+  color: var(--spotify-white);
+}
+
+.single-item__type {
+  font-size: 14px;
+  color: var(--spotify-white);
+}
+
+.single-item__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--spotify-white);
+}
+
+.single-item__2lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; 
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  .single-item__icon {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .single-item {
+    padding: 0;
+  }
+
+  .single-item__texts {
+    gap: 0;
+  }
+}
