@@ -1,9 +1,5 @@
 .header {
     display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    padding: .5rem 3rem;
     background-color: var(--spotify-black);
     color: var(--spotify-white);
 }
@@ -17,6 +13,10 @@
 }
 
 .header__link {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: .5rem 3rem;
     color: var(--spotify-white);
     text-decoration: none;
     transition: color 0.3s ease-in-out;

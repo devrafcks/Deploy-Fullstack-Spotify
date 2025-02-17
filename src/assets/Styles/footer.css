@@ -1,10 +1,13 @@
+
 .footer {
     background-color: var(--spotify-black);
     color: var(--spotify-white);
     text-align: center;
     padding: 20px;
     font-size: 14px;
+    margin-top: 1.8em;
     border-top: 2px solid var(--spotify-green);
+    width: 100%;
 }
 
 .footer a {

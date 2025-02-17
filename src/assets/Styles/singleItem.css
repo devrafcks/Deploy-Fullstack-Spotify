@@ -1,11 +1,13 @@
 .single-item {
-  margin-top: -20px;
-  padding: 25px 16px;
+  margin-top: 0px;
+  padding: 19px 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   border-radius: var(--border-radius-l);
   align-items: center;
+  text-decoration: none;
+  text-align: center;
   transition: background-color var(--transition-function)
     var(--transition-duration);
 }
@@ -74,7 +76,7 @@
 .single-item__texts {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   color: var(--spotify-white);
 }
 

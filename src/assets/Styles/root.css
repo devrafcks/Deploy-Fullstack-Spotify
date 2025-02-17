@@ -4,6 +4,7 @@
     --spotify-white: #FFFFFF;
     --spotify-bg: #0b421e;
     --spotify-dark-gray: #121212;
+    --spotify-green-light: rgba(27, 205, 89, 0.705); 
 
     --transition-duration: 200ms;
     --transition-function: ease;

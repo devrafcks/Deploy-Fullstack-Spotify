@@ -1,12 +1,13 @@
 body{
   background: linear-gradient(to top, var(--spotify-black), var(--spotify-bg));
+  background-attachment: fixed;
 }
 
 .item-list {
   padding: 2em 4em;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 27px;
 }
 
 .item-list__header {
@@ -14,7 +15,7 @@ body{
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1em;
-  border-bottom: solid 2px var(--spotify-white);
+  border-bottom: 2px solid var(--spotify-green);
 }
 
 .item-list__title {
@@ -36,7 +37,11 @@ body{
 }
 
 .item-list__container {
-  display: grid;
+  display: grid;;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: center;
   grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
 }
 

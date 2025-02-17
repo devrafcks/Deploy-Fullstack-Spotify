@@ -1,0 +1,64 @@
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: var(--border-radius-s);
+  transition: background-color var(--transition-function)
+    var(--transition-duration);
+  gap: 15px;
+  background-color: var(--spotify-dark-gray); 
+  color: var(--spotify-white); 
+}
+
+.song-item:hover {
+    background-color: var(--spotify-green-light);
+    color: var(--spotify-black);
+}
+
+
+.song-item__name {
+  color: var(--spotify-white);
+}
+
+.song-item__name:hover {
+  text-decoration: underline;
+}
+
+.song-item__image {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-s);
+}
+ 
+.song-item__album{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.song-item__number-album {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.song-list__see-more {
+  font-weight: 700;
+  margin-left: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: var(--spotify-green);
+}
+
+.song-list__see-more:hover {
+  text-decoration: underline;
+  color: var(--spotify-white);
+}
+
+@media (max-width: 480px) {
+  .song-item {
+    padding: 10px 16px;
+  }
+}
