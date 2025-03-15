@@ -15,6 +15,7 @@
 .song-item:hover {
     background-color: var(--spotify-green-light);
     color: var(--spotify-black);
+    text-decoration: none;
 }
 
 
@@ -23,7 +24,7 @@
 }
 
 .song-item__name:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .song-item__image {

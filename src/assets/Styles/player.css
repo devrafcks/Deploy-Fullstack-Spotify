@@ -15,6 +15,7 @@
 }
 
 .player__icon {
+  color: var(--spotify-white); /* Ícones brancos por padrão */
   cursor: pointer;
   transition-property: transform, color;
   transition-timing-function: var(--transition-function);
