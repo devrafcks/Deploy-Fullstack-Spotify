@@ -1,0 +1,22 @@
+{
+  "name": "spotify-fullstack",
+  "version": "1.0.0",
+  "description": "Este é o repositório do **deploy** do projeto Fullstack Spotify, criado durante a Jornada Full Stack da Hashtag. O projeto simula um streaming de música, apresentando informações de artistas e músicas pré-selecionadas pelo instrutor.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devrafcks/Deploy-Fullstack-Spotify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/devrafcks/Deploy-Fullstack-Spotify/issues"
+  },
+  "homepage": "https://github.com/devrafcks/Deploy-Fullstack-Spotify#readme"
+}
