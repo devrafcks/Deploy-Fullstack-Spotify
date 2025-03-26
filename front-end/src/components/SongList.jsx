@@ -5,7 +5,7 @@ const SongList = ({ songsArray }) => {
     return (
         <div className="song-list">
             {songsArray.slice(0, 5).map((currentSongObj, index) => (
-            <SongItem {...currentSongObj} index={index} key={currentSongObj.id} />
+            <SongItem {...currentSongObj} index={index} key={currentSongObj._id} />
             ))}
         </div>
     );

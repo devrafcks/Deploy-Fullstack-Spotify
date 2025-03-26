@@ -3,8 +3,8 @@ import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
-const SingleItem = ({ id, name, image, artist, idPath }) => {
-    const itemUrl = idPath && id ? `${idPath}/${id}` : "#"; 
+const SingleItem = ({ _id, name, image, artist, idPath }) => {
+    const itemUrl = idPath && _id ? `${idPath}/${_id}` : "#"; 
 
     return (
         <Link to={itemUrl} className="single-item">
@@ -31,7 +31,7 @@ const SingleItem = ({ id, name, image, artist, idPath }) => {
 };
 
 SingleItem.propTypes = {
-    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    _id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     artist: PropTypes.string,

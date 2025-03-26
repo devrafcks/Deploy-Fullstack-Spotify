@@ -3,6 +3,7 @@
     background-color: var(--spotify-black);
     color: var(--spotify-white);
     text-align: center;
+    margin-top: 20px;
     padding: 20px;
     font-size: 14px;
     border-top: 2px solid var(--spotify-green);
